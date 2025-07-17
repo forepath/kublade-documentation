@@ -4,7 +4,7 @@
 
 [Why Kublade?](/why-kublade.md)[Documentation](/docs/intro.md)[API](/api.md)[Enterprise Support](/enterprise-support.md)
 
-[GitHub](https://github.com/forepath/kublade)[Gitter](https://matrix.to/#/#kublade:gitter.im)
+[GitHub](https://github.com/forepath/kublade)[Discord](https://discord.gg/5wFMuVvQZM)
 
 # Enterprise Support
 
