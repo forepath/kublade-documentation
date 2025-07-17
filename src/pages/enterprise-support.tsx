@@ -83,7 +83,7 @@ function EnterpriseSupportHeader() {
               <div className={styles.buttons}>
                 <Link
                   className="button button--primary button--lg"
-                  to="mailto:support@kublade.org">
+                  to="mailto:hi@forepath.io">
                   Talk to an Expert
                 </Link>
                 <Link

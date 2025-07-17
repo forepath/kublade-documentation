@@ -42,7 +42,7 @@ export default function HomepageApp(): ReactNode {
             <div className="text--center">
               <Link
                 className="button button--primary button--lg"
-                to="mailto:support@kublade.org">
+                to="mailto:hi@forepath.io">
                 Request a Demo
               </Link>
             </div>
