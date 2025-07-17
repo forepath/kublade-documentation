@@ -125,8 +125,8 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://matrix.to/#/#kublade:gitter.im',
-          label: 'Gitter',
+          href: 'https://discord.gg/5wFMuVvQZM',
+          label: 'Discord',
           position: 'right',
         },
       ],
