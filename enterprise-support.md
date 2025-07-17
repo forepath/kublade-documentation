@@ -17,7 +17,7 @@ Next level cloud solutions, backed by experts
 | Enterprise   | 240           | 140.00 €  | 33,600.00 € | 7%                    | 150.00 €        | Within 6 hours    | Email, Gittr, Phone (24/7)           |
 | Emergency    | 0             | 180.00 €  | 0.00 €      | 0%                    | 0.00 €          | Up to 1 hour      | Email, Gittr, Phone (24/7)           |
 
-[Talk to an Expert](mailto:support@kublade.org)[Try it yourself](/docs/intro.md)
+[Talk to an Expert](mailto:hi@forepath.io)[Try it yourself](/docs/intro.md)
 
 Resources
 
