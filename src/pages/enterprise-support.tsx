@@ -46,7 +46,7 @@ function EnterpriseSupportHeader() {
                     <td>7%</td>
                     <td>160.00 €</td>
                     <td>Next business day</td>
-                    <td>Email, Gittr</td>
+                    <td>Email, Discord</td>
                   </tr>
                   <tr>
                     <td className="table__stretch">Professional</td>
@@ -56,7 +56,7 @@ function EnterpriseSupportHeader() {
                     <td>7%</td>
                     <td>155.00 €</td>
                     <td>Within 24 hours</td>
-                    <td>Email, Gittr, Phone (business hours)</td>
+                    <td>Email, Discord, Phone (business hours)</td>
                   </tr>
                   <tr>
                     <td className="table__stretch">Enterprise</td>
@@ -66,7 +66,7 @@ function EnterpriseSupportHeader() {
                     <td>7%</td>
                     <td>150.00 €</td>
                     <td>Within 6 hours</td>
-                    <td>Email, Gittr, Phone (24/7)</td>
+                    <td>Email, Discord, Phone (24/7)</td>
                   </tr>
                   <tr>
                     <td className="table__stretch">Emergency</td>
@@ -76,7 +76,7 @@ function EnterpriseSupportHeader() {
                     <td>0%</td>
                     <td>0.00 €</td>
                     <td>Up to 1 hour</td>
-                    <td>Email, Gittr, Phone (24/7)</td>
+                    <td>Email, Discord, Phone (24/7)</td>
                   </tr>
                 </tbody>
               </table>
