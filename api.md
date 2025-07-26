@@ -28,6 +28,7 @@ Search...
   * getGet a cluster
   * delDelete a cluster
   * patchUpdate a cluster
+  * patchApprove a cluster
 
 * Deployments
 
@@ -91,6 +92,11 @@ Search...
   * getGet the port
   * delDelete the port
   * patchUpdate the port
+  * getList the environment variables
+  * postAdd a new environment variable
+  * getGet the environment variable
+  * delDelete the environment variable
+  * patchUpdate the environment variable
 
 * Users
 
@@ -103,7 +109,7 @@ Search...
 
 [API docs by Redocly](https://redocly.com/redoc/)
 
-# Kublade API Documentation<!-- --> (<!-- -->v1.0.2<!-- -->)
+# Kublade API Documentation<!-- --> (<!-- -->v1.1.1<!-- -->)
 
 Download OpenAPI specification<!-- -->:[Download](https://documents.kublade.org/api-docs-latest.json)
 
@@ -629,7 +635,15 @@ Expand all  Collapse all
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "123e4567-e89b-12d3-a456-426614174000",
 "project_id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
 "name": "Cluster 1",
+"update": false,
+"delete": false,
+"deployed_at": "2021-01-01 00:00:00",
+"deployment_updated_at": "2021-01-01 00:00:00",
+"creation_dispatched_at": "2021-01-01 00:00:00",
+"update_dispatched_at": "2021-01-01 00:00:00",
+"deletion_dispatched_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -740,7 +754,15 @@ Expand all  Collapse all
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "123e4567-e89b-12d3-a456-426614174000",
 "project_id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
 "name": "Cluster 1",
+"update": false,
+"delete": false,
+"deployed_at": "2021-01-01 00:00:00",
+"deployment_updated_at": "2021-01-01 00:00:00",
+"creation_dispatched_at": "2021-01-01 00:00:00",
+"update_dispatched_at": "2021-01-01 00:00:00",
+"deletion_dispatched_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -809,7 +831,15 @@ Expand all  Collapse all
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "123e4567-e89b-12d3-a456-426614174000",
 "project_id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
 "name": "Cluster 1",
+"update": false,
+"delete": false,
+"deployed_at": "2021-01-01 00:00:00",
+"deployment_updated_at": "2021-01-01 00:00:00",
+"creation_dispatched_at": "2021-01-01 00:00:00",
+"update_dispatched_at": "2021-01-01 00:00:00",
+"deletion_dispatched_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -873,7 +903,15 @@ Expand all  Collapse all
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "123e4567-e89b-12d3-a456-426614174000",
 "project_id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
 "name": "Cluster 1",
+"update": false,
+"delete": false,
+"deployed_at": "2021-01-01 00:00:00",
+"deployment_updated_at": "2021-01-01 00:00:00",
+"creation_dispatched_at": "2021-01-01 00:00:00",
+"update_dispatched_at": "2021-01-01 00:00:00",
+"deletion_dispatched_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -980,7 +1018,92 @@ Expand all  Collapse all
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "123e4567-e89b-12d3-a456-426614174000",
 "project_id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
 "name": "Cluster 1",
+"update": false,
+"delete": false,
+"deployed_at": "2021-01-01 00:00:00",
+"deployment_updated_at": "2021-01-01 00:00:00",
+"creation_dispatched_at": "2021-01-01 00:00:00",
+"update_dispatched_at": "2021-01-01 00:00:00",
+"deletion_dispatched_at": "2021-01-01 00:00:00",
+"created_at": "2021-01-01 00:00:00",
+"updated_at": "2021-01-01 00:00:00",
+"deleted_at": "2021-01-01 00:00:00"
+}
+}
+}`
+
+## [](#tag/Clusters/operation/6e520871753bb1162a1c9de18a1cf184)Approve a cluster<!-- -->
+
+Approve the deployment.
+
+##### path<!-- --> Parameters
+
+|                     |                             |
+| ------------------- | --------------------------- |
+| project\_idrequired | stringThe ID of the project |
+| cluster\_idrequired | stringThe ID of the cluster |
+
+### Responses
+
+**200<!-- -->**
+
+Cluster approved
+
+**400<!-- -->**
+
+Validation error
+
+**401<!-- -->**
+
+Unauthorized
+
+**404<!-- -->**
+
+Not found
+
+**500<!-- -->**
+
+Server error
+
+patch/projects/{project\_id}/clusters/{cluster\_id}/approve
+
+https\://documents.kublade.org/projects/{project\_id}/clusters/{cluster\_id}/approve
+
+### <!-- -->Response samples<!-- -->
+
+* 200
+* 400
+* 401
+* 404
+* 500
+
+Content type
+
+application/json
+
+Copy
+
+Expand all  Collapse all
+
+`{
+"status": "success",
+"message": "Cluster approved",
+"data": {
+"cluster": {
+"id": "123e4567-e89b-12d3-a456-426614174000",
+"user_id": "123e4567-e89b-12d3-a456-426614174000",
+"project_id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
+"name": "Cluster 1",
+"update": false,
+"delete": false,
+"deployed_at": "2021-01-01 00:00:00",
+"deployment_updated_at": "2021-01-01 00:00:00",
+"creation_dispatched_at": "2021-01-01 00:00:00",
+"update_dispatched_at": "2021-01-01 00:00:00",
+"deletion_dispatched_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -2485,9 +2608,10 @@ List the templates.
 
 ##### query<!-- --> Parameters
 
-|        |                             |
-| ------ | --------------------------- |
-| cursor | stringCursor for pagination |
+|        |                                                              |
+| ------ | ------------------------------------------------------------ |
+| cursor | stringCursor for pagination                                  |
+| type   | string<!-- -->Default:<!-- -->"application"Type of an object |
 
 ### Responses
 
@@ -2529,6 +2653,7 @@ Expand all  Collapse all
 {
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "1",
+"type": "application",
 "name": "Template 1",
 "netpol": false,
 "created_at": "2021-01-01 00:00:00",
@@ -2613,6 +2738,7 @@ Expand all  Collapse all
 "template": {
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "1",
+"type": "application",
 "name": "Template 1",
 "netpol": false,
 "created_at": "2021-01-01 00:00:00",
@@ -2676,6 +2802,7 @@ Expand all  Collapse all
 "template": {
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "1",
+"type": "application",
 "name": "Template 1",
 "netpol": false,
 "created_at": "2021-01-01 00:00:00",
@@ -2739,6 +2866,7 @@ Expand all  Collapse all
 "template": {
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "1",
+"type": "application",
 "name": "Template 1",
 "netpol": false,
 "created_at": "2021-01-01 00:00:00",
@@ -2835,6 +2963,7 @@ Expand all  Collapse all
 "template": {
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "1",
+"type": "application",
 "name": "Template 1",
 "netpol": false,
 "created_at": "2021-01-01 00:00:00",
@@ -2922,6 +3051,7 @@ Expand all  Collapse all
 "template": {
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "1",
+"type": "application",
 "name": "Template 1",
 "netpol": false,
 "created_at": "2021-01-01 00:00:00",
@@ -3012,6 +3142,7 @@ Expand all  Collapse all
 "template": {
 "id": "123e4567-e89b-12d3-a456-426614174000",
 "user_id": "1",
+"type": "application",
 "name": "Template 1",
 "netpol": false,
 "created_at": "2021-01-01 00:00:00",
@@ -3445,6 +3576,7 @@ Expand all  Collapse all
 "name": "File 1",
 "mime_type": "text/plain",
 "content": "Content of the file",
+"sort": 0,
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -3539,6 +3671,7 @@ Expand all  Collapse all
 "name": "File 1",
 "mime_type": "text/plain",
 "content": "Content of the file",
+"sort": 0,
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -3600,6 +3733,7 @@ Expand all  Collapse all
 "name": "File 1",
 "mime_type": "text/plain",
 "content": "Content of the file",
+"sort": 0,
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -3661,6 +3795,7 @@ Expand all  Collapse all
 "name": "File 1",
 "mime_type": "text/plain",
 "content": "Content of the file",
+"sort": 0,
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -3753,6 +3888,7 @@ Expand all  Collapse all
 "name": "File 1",
 "mime_type": "text/plain",
 "content": "Content of the file",
+"sort": 0,
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00",
 "deleted_at": "2021-01-01 00:00:00"
@@ -4073,7 +4209,7 @@ Expand all  Collapse all
 }
 }`
 
-## [](#tag/Templates/operation/fd2v1.0.235f1fa2b9799e02b92a986b9)Update the field<!-- -->
+## [](#tag/Templates/operation/fd2v1.1.135f1fa2b9799e02b92a986b9)Update the field<!-- -->
 
 Update the field.
 
@@ -4937,6 +5073,356 @@ Expand all  Collapse all
 }
 }`
 
+## [](#tag/Templates/operation/388d48023b90c9153a5c6e460ec5e485)List the environment variables<!-- -->
+
+List the environment variables.
+
+##### path<!-- --> Parameters
+
+|                      |                              |
+| -------------------- | ---------------------------- |
+| template\_idrequired | stringThe ID of the template |
+
+##### query<!-- --> Parameters
+
+|        |                             |
+| ------ | --------------------------- |
+| cursor | stringCursor for pagination |
+
+### Responses
+
+**200<!-- -->**
+
+Environment variables retrieved successfully
+
+**401<!-- -->**
+
+Unauthorized
+
+**500<!-- -->**
+
+Server error
+
+get/api/templates/{template\_id}/env-variables
+
+https\://documents.kublade.org/api/templates/{template\_id}/env-variables
+
+### <!-- -->Response samples<!-- -->
+
+* 200
+* 401
+* 500
+
+Content type
+
+application/json
+
+Copy
+
+Expand all  Collapse all
+
+`{
+"status": "success",
+"message": "Environment variables retrieved successfully",
+"data": {
+"env_variables": [
+{
+"id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
+"key": "KEY",
+"created_at": "2021-01-01 00:00:00",
+"updated_at": "2021-01-01 00:00:00",
+"deleted_at": "2021-01-01 00:00:00"
+}
+],
+"links": {
+"next": "string",
+"prev": "string"
+}
+}
+}`
+
+## [](#tag/Templates/operation/a0449a55c06ff00c72991544f2033cfd)Add a new environment variable<!-- -->
+
+Add a new environment variable.
+
+##### path<!-- --> Parameters
+
+|                      |                              |
+| -------------------- | ---------------------------- |
+| template\_idrequired | stringThe ID of the template |
+
+##### Request Body schema: application/jsonrequired
+
+|     |        |
+| --- | ------ |
+| key | string |
+
+### Responses
+
+**200<!-- -->**
+
+Environment variable added successfully
+
+**400<!-- -->**
+
+Validation error
+
+**401<!-- -->**
+
+Unauthorized
+
+**500<!-- -->**
+
+Server error
+
+post/api/templates/{template\_id}/env-variables
+
+https\://documents.kublade.org/api/templates/{template\_id}/env-variables
+
+### <!-- -->Request samples<!-- -->
+
+* Payload
+
+Content type
+
+application/json
+
+Copy
+
+`{
+"key": "string"
+}`
+
+### <!-- -->Response samples<!-- -->
+
+* 200
+* 400
+* 401
+* 500
+
+Content type
+
+application/json
+
+Copy
+
+Expand all  Collapse all
+
+`{
+"status": "success",
+"message": "Environment variable added successfully",
+"data": {
+"env_variable": {
+"id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
+"key": "KEY",
+"created_at": "2021-01-01 00:00:00",
+"updated_at": "2021-01-01 00:00:00",
+"deleted_at": "2021-01-01 00:00:00"
+}
+}
+}`
+
+## [](#tag/Templates/operation/524dd0b3f581c6b7b58b73d7ffee222a)Get the environment variable<!-- -->
+
+Get the environment variable.
+
+##### path<!-- --> Parameters
+
+|                           |                                          |
+| ------------------------- | ---------------------------------------- |
+| template\_idrequired      | stringThe ID of the template             |
+| env\_variable\_idrequired | stringThe ID of the environment variable |
+
+### Responses
+
+**200<!-- -->**
+
+Environment variable retrieved successfully
+
+**401<!-- -->**
+
+Unauthorized
+
+**500<!-- -->**
+
+Server error
+
+get/api/templates/{template\_id}/env-variables/{env\_variable\_id}
+
+https\://documents.kublade.org/api/templates/{template\_id}/env-variables/{env\_variable\_id}
+
+### <!-- -->Response samples<!-- -->
+
+* 200
+* 401
+* 500
+
+Content type
+
+application/json
+
+Copy
+
+Expand all  Collapse all
+
+`{
+"status": "success",
+"message": "Environment variable retrieved successfully",
+"data": {
+"env_variable": {
+"id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
+"key": "KEY",
+"created_at": "2021-01-01 00:00:00",
+"updated_at": "2021-01-01 00:00:00",
+"deleted_at": "2021-01-01 00:00:00"
+}
+}
+}`
+
+## [](#tag/Templates/operation/6a15fc767a8ea85b9ff38b19b7182e3e)Delete the environment variable<!-- -->
+
+Delete the port.
+
+##### path<!-- --> Parameters
+
+|                           |                                          |
+| ------------------------- | ---------------------------------------- |
+| template\_idrequired      | stringThe ID of the template             |
+| env\_variable\_idrequired | stringThe ID of the environment variable |
+
+### Responses
+
+**200<!-- -->**
+
+Environment variable deleted successfully
+
+**401<!-- -->**
+
+Unauthorized
+
+**500<!-- -->**
+
+Server error
+
+delete/api/templates/{template\_id}/env-variables/{env\_variable\_id}
+
+https\://documents.kublade.org/api/templates/{template\_id}/env-variables/{env\_variable\_id}
+
+### <!-- -->Response samples<!-- -->
+
+* 200
+* 401
+* 500
+
+Content type
+
+application/json
+
+Copy
+
+Expand all  Collapse all
+
+`{
+"status": "success",
+"message": "Environment variable deleted successfully",
+"data": {
+"env_variable": {
+"id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
+"key": "KEY",
+"created_at": "2021-01-01 00:00:00",
+"updated_at": "2021-01-01 00:00:00",
+"deleted_at": "2021-01-01 00:00:00"
+}
+}
+}`
+
+## [](#tag/Templates/operation/1b11074680a3c7796cfcfc371f77d650)Update the environment variable<!-- -->
+
+Update the port.
+
+##### path<!-- --> Parameters
+
+|                      |                              |
+| -------------------- | ---------------------------- |
+| template\_idrequired | stringThe ID of the template |
+| port\_idrequired     | stringThe ID of the port     |
+
+##### Request Body schema: application/jsonrequired
+
+|     |        |
+| --- | ------ |
+| key | string |
+
+### Responses
+
+**200<!-- -->**
+
+Environment variable updated successfully
+
+**400<!-- -->**
+
+Validation error
+
+**401<!-- -->**
+
+Unauthorized
+
+**500<!-- -->**
+
+Server error
+
+patch/api/templates/{template\_id}/env-variables/{env\_variable\_id}
+
+https\://documents.kublade.org/api/templates/{template\_id}/env-variables/{env\_variable\_id}
+
+### <!-- -->Request samples<!-- -->
+
+* Payload
+
+Content type
+
+application/json
+
+Copy
+
+`{
+"key": "string"
+}`
+
+### <!-- -->Response samples<!-- -->
+
+* 200
+* 400
+* 401
+* 500
+
+Content type
+
+application/json
+
+Copy
+
+Expand all  Collapse all
+
+`{
+"status": "success",
+"message": "Port updated successfully",
+"data": {
+"env_variable": {
+"id": "123e4567-e89b-12d3-a456-426614174000",
+"template_id": "123e4567-e89b-12d3-a456-426614174000",
+"key": "KEY",
+"created_at": "2021-01-01 00:00:00",
+"updated_at": "2021-01-01 00:00:00",
+"deleted_at": "2021-01-01 00:00:00"
+}
+}
+}`
+
 ## [](#tag/Users)Users
 
 Endpoints for user management
@@ -5387,7 +5873,7 @@ Expand all  Collapse all
 "updated_at": "2021-01-01 00:00:00"
 },
 "link": "https://example.com/auth/magic-link/1234567890",
-"expires_at": "2025-01-01T00:00:0v1.0.2000Z"
+"expires_at": "2025-01-01T00:00:0v1.1.1000Z"
 }
 }`
 
