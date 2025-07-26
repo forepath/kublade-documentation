@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/forepath/kublade/compare/v1.1.1...v1.2.0) (2025-07-26)[​](#120-2025-07-26 "Direct link to 120-2025-07-26")
+
+### Features[​](#features "Direct link to Features")
+
+* onboarding tutorial ([451b635](https://github.com/forepath/kublade/commit/451b635d374068da2ea40602c18b4ff2cb1fc870))
+
 ## [1.1.1](https://github.com/forepath/kublade/compare/v1.1.0...v1.1.1) (2025-07-26)[​](#111-2025-07-26 "Direct link to 111-2025-07-26")
 
 ### Bug Fixes[​](#bug-fixes "Direct link to Bug Fixes")
@@ -10,7 +16,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.1.0](https://github.com/forepath/kublade/compare/v1.0.2...v1.1.0) (2025-07-26)[​](#110-2025-07-26 "Direct link to 110-2025-07-26")
 
-### Features[​](#features "Direct link to Features")
+### Features[​](#features-1 "Direct link to Features")
 
 * configurable global process timeout ([46b097f](https://github.com/forepath/kublade/commit/46b097ff774724cc19d52c4e1811a01dc30b7b89))
 * internal kops s3 bucket support ([3888641](https://github.com/forepath/kublade/commit/3888641070bbd60c02a334e12ba12c3607a45b9a))
@@ -33,6 +39,6 @@ All notable changes to this project will be documented in this file.
 
 ## 1.0.0 (2025-07-17)[​](#100-2025-07-17 "Direct link to 1.0.0 (2025-07-17)")
 
-### Features[​](#features-1 "Direct link to Features")
+### Features[​](#features-2 "Direct link to Features")
 
 * initial commit ([0cc9364](https://github.com/forepath/kublade/commit/0cc936499866f3daf5211cef9574996b72882635))

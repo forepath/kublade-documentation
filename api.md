@@ -109,7 +109,7 @@ Search...
 
 [API docs by Redocly](https://redocly.com/redoc/)
 
-# Kublade API Documentation<!-- --> (<!-- -->v1.1.1<!-- -->)
+# Kublade API Documentation<!-- --> (<!-- -->v1.2.0<!-- -->)
 
 Download OpenAPI specification<!-- -->:[Download](https://documents.kublade.org/api-docs-latest.json)
 
@@ -357,6 +357,7 @@ Expand all  Collapse all
 "email_verified_at": "2021-01-01T00:00:00Z",
 "password": "password123",
 "remember_token": "remember_token123",
+"onboarding_dismissed_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00"
 },
@@ -481,6 +482,7 @@ Expand all  Collapse all
 "email_verified_at": "2021-01-01T00:00:00Z",
 "password": "password123",
 "remember_token": "remember_token123",
+"onboarding_dismissed_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00"
 }
@@ -4209,7 +4211,7 @@ Expand all  Collapse all
 }
 }`
 
-## [](#tag/Templates/operation/fd2v1.1.135f1fa2b9799e02b92a986b9)Update the field<!-- -->
+## [](#tag/Templates/operation/fd2v1.2.035f1fa2b9799e02b92a986b9)Update the field<!-- -->
 
 Update the field.
 
@@ -5571,6 +5573,7 @@ Expand all  Collapse all
 "email_verified_at": "2021-01-01T00:00:00Z",
 "password": "password123",
 "remember_token": "remember_token123",
+"onboarding_dismissed_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00"
 }
@@ -5695,6 +5698,7 @@ Expand all  Collapse all
 "email_verified_at": "2021-01-01T00:00:00Z",
 "password": "password123",
 "remember_token": "remember_token123",
+"onboarding_dismissed_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00"
 }
@@ -5800,6 +5804,7 @@ Expand all  Collapse all
 "email_verified_at": "2021-01-01T00:00:00Z",
 "password": "password123",
 "remember_token": "remember_token123",
+"onboarding_dismissed_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00"
 }
@@ -5869,11 +5874,12 @@ Expand all  Collapse all
 "email_verified_at": "2021-01-01T00:00:00Z",
 "password": "password123",
 "remember_token": "remember_token123",
+"onboarding_dismissed_at": "2021-01-01 00:00:00",
 "created_at": "2021-01-01 00:00:00",
 "updated_at": "2021-01-01 00:00:00"
 },
 "link": "https://example.com/auth/magic-link/1234567890",
-"expires_at": "2025-01-01T00:00:0v1.1.1000Z"
+"expires_at": "2025-01-01T00:00:0v1.2.0000Z"
 }
 }`
 
