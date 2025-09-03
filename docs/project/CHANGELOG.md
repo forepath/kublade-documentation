@@ -2,15 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.2.2](https://github.com/forepath/kublade/compare/v1.2.1...v1.2.2) (2025-07-27)[​](#122-2025-07-27 "Direct link to 122-2025-07-27")
+## [1.2.3](https://github.com/forepath/kublade/compare/v1.2.2...v1.2.3) (2025-09-03)[​](#123-2025-09-03 "Direct link to 123-2025-09-03")
 
 ### Bug Fixes[​](#bug-fixes "Direct link to Bug Fixes")
+
+* card theming ([1f764a5](https://github.com/forepath/kublade/commit/1f764a56b44fa002096ce9a25a2470ea47f64bb2))
+
+## [1.2.2](https://github.com/forepath/kublade/compare/v1.2.1...v1.2.2) (2025-07-27)[​](#122-2025-07-27 "Direct link to 122-2025-07-27")
+
+### Bug Fixes[​](#bug-fixes-1 "Direct link to Bug Fixes")
 
 * validation rules array default ([b52a736](https://github.com/forepath/kublade/commit/b52a7368b457db461fe33768b9343df5c752b08c))
 
 ## [1.2.1](https://github.com/forepath/kublade/compare/v1.2.0...v1.2.1) (2025-07-26)[​](#121-2025-07-26 "Direct link to 121-2025-07-26")
 
-### Bug Fixes[​](#bug-fixes-1 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-2 "Direct link to Bug Fixes")
 
 * guide content overflow click blocking ([e0131d5](https://github.com/forepath/kublade/commit/e0131d5398d923de371c0fbef7c6fda76d895c3a))
 
@@ -22,7 +28,7 @@ All notable changes to this project will be documented in this file.
 
 ## [1.1.1](https://github.com/forepath/kublade/compare/v1.1.0...v1.1.1) (2025-07-26)[​](#111-2025-07-26 "Direct link to 111-2025-07-26")
 
-### Bug Fixes[​](#bug-fixes-2 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-3 "Direct link to Bug Fixes")
 
 * api specification generation ([ec94f0d](https://github.com/forepath/kublade/commit/ec94f0d63305bb47a1d0e4f32a8586da67d198bb))
 
@@ -39,13 +45,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.0.2](https://github.com/forepath/kublade/compare/v1.0.1...v1.0.2) (2025-07-26)[​](#102-2025-07-26 "Direct link to 102-2025-07-26")
 
-### Bug Fixes[​](#bug-fixes-3 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-4 "Direct link to Bug Fixes")
 
 * activity properties wrapping ([7638a54](https://github.com/forepath/kublade/commit/7638a54722e00dafbb2208f481a84ea873e7129e))
 
 ## [1.0.1](https://github.com/forepath/kublade/compare/v1.0.0...v1.0.1) (2025-07-25)[​](#101-2025-07-25 "Direct link to 101-2025-07-25")
 
-### Bug Fixes[​](#bug-fixes-4 "Direct link to Bug Fixes")
+### Bug Fixes[​](#bug-fixes-5 "Direct link to Bug Fixes")
 
 * hide statistics if no datapoint exists ([781ce73](https://github.com/forepath/kublade/commit/781ce73e1f046c616bdea71e61415e242f31804c))
 
